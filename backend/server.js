@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import AuthRoutes from "./routes/Auth.js";
+import AdminRoutes from "./routes/Admin.js";
 import DbCon from "./utlies/db.js";
 import cookieParser from "cookie-parser";
 
@@ -21,6 +22,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/auth", AuthRoutes);
+app.use("/api/admin", AdminRoutes);
 
 app.listen(PORT, () => {
   console.log(`server running at ${PORT}`);
