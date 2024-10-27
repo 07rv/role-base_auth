@@ -71,4 +71,17 @@ const login = async (req, res) => {
   }
 };
 
-export { register, login };
+const logout = async (req, res) => {
+  try {
+    res.clearCookie("token");
+
+    res.status(200).json({ sucess: true, message: "User logout" });
+  } catch (error) {
+    console.log(error);
+    return res
+      .status(500)
+      .json({ sucess: false, message: "Interval Server error" });
+  }
+};
+
+export { register, login, logout };
