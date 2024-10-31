@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./NotFound";
 import App from "./App.jsx";
+import Layout from "./layout/Layout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
     path: "/trip",
     element: (
       <Layout>
-        <Trip />
+        <h1>asdfg</h1>
       </Layout>
     ),
     errorElement: <NotFound />,
