@@ -1,11 +1,10 @@
-const Login = () => {
+const Register = ({ setLogintab }) => {
   return (
     <div class="py-16">
       <div class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
-        <div class="hidden lg:block lg:w-1/2 bg-cover bg-[url('https://plus.unsplash.com/premium_photo-1661962607720-d23f056f56e6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29zbW9zfGVufDB8fDB8fHww&auto=format&fit=crop&w=667&q=80')]"></div>
         <div class="w-full p-8 lg:w-1/2">
           <h2 class="text-2xl font-semibold text-gray-700 text-center">
-            Brand
+            Brand123456
           </h2>
           <p class="text-xl text-gray-600 text-center">Welcome back!</p>
           <a
@@ -59,9 +58,10 @@ const Login = () => {
             <span class="border-b w-1/4 md:w-1/3"></span>
           </div>
         </div>
+        <div class="hidden lg:block lg:w-1/2 bg-cover bg-[url('https://plus.unsplash.com/premium_photo-1661962607720-d23f056f56e6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29zbW9zfGVufDB8fDB8fHww&auto=format&fit=crop&w=667&q=80')]"></div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Register;
