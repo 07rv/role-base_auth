@@ -52,8 +52,13 @@ const Register = ({ setLogintab }) => {
           </div>
           <div class="mt-4 flex items-center justify-between">
             <span class="border-b w-1/4 md:w-1/3"></span>
-            <a href="#" class="text-xs text-gray-500 uppercase">
-              or sign up
+            <a
+              onClick={() => {
+                setLogintab("login");
+              }}
+              class="text-xs text-gray-500 uppercase"
+            >
+              or sign in
             </a>
             <span class="border-b w-1/4 md:w-1/3"></span>
           </div>
